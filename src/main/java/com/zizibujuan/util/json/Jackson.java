@@ -24,6 +24,7 @@ public class Jackson implements IJson {
 	public Jackson(){
 		objectMapper = new ObjectMapper();
 		objectMapper.setDateFormat(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss"));
+		objectMapper.setPropertyNamingStrategy(new UpperCaseStrategy());
 	}
 	
 	
